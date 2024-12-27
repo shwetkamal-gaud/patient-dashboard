@@ -1,0 +1,135 @@
+@import './font-faces.css';
+
+
+:root {
+  --foreground: #010101;
+  --primary: #f1f1f1;
+  --secondary: rgba(31, 209, 253, 0.4);
+  --tertiary: rgba(31, 209, 253, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --foreground: #3e3d3d;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Manrope';
+  background-color: #F6F7F8 !important;
+}
+
+body {
+  color: var(--foreground);
+
+  font-family: 'Manrope';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Manrope' !important;
+  font-weight: bold !important;
+}
+
+li {
+  font-family: 'Manrope' !important;
+  cursor: pointer;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope' !important;
+  font-weight: bolder !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.current {
+  border-radius: 20px;
+  background-color: #01F0D0;
+
+
+}
+
+.current-p {
+  background-color: #01F0D0;
+  padding: 1rem;
+}
+
+.card-body {
+  overflow-y: auto;
+  max-height: 930px !important;
+}
+
+.lab {
+  overflow-y: auto;
+  max-height: 168px !important;
+}
+
+
+.table-body {
+  overflow: auto;
+  max-height: 250px !important;
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #E3E4E6;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #072635;
+  border-radius: 4px;
+  height: 100px;
+}
+
+
+tr {
+  text-align: start !important;
+  vertical-align: middle !important;
+  /* font-family: 'Manrope'; */
+}
+
+.header>span {
+  color: #072635;
+  font-weight: bold;
+  text-align: start !important;
+  /* font-family: 'Manrope'; */
+}
+
+.t-body {
+  border-bottom: 1px solid #b9bbc1 !important;
+}
+
+span {
+  font-family: 'Manrope' !important;
+
+}
